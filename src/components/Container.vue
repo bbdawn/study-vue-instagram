@@ -1,9 +1,9 @@
 <template>
   <div>
-    컨테이너에요
-  <Post/>
-  <Post/>
-  <Post/>
+    <Post :게시물="게시물[i]" v-for="(a,i) in 게시물" :key="i"/>
+    <!-- <Post :게시물="게시물[0]"/>
+    <Post :게시물="게시물[1]"/>
+    <Post :게시물="게시물[2]"/> -->
 </div>
 </template>
 
@@ -13,6 +13,9 @@ export default {
     name: 'TheContainer',
     components: {
         Post,
+    },
+    props: {
+        게시물 : Array
     }
 }
 </script>
