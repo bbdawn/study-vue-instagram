@@ -21,11 +21,17 @@
 
 <script>
 
+import Container from './components/Container.vue';
 
 export default {
   name: 'App',
+  data(){
+    return{
+      
+    }
+  },
   components: {
- 
+    Container,
   }
 }
 </script>

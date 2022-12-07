@@ -1,5 +1,6 @@
 <template>
   <div>
+    컨테이너에요
   <Post/>
   <Post/>
   <Post/>
@@ -7,8 +8,12 @@
 </template>
 
 <script>
+import Post from './Post.vue';
 export default {
-    name: 'TheContainer'
+    name: 'TheContainer',
+    components: {
+        Post,
+    }
 }
 </script>
 
